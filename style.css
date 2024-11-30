@@ -1,0 +1,150 @@
+/* Resetando margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff6f61;
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo h1 {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+/* Missão e Visão */
+.missoes {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+.missoes .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.missoes h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.missoes p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.missoes .missao, .missoes .visao {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.missoes img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Equipe */
+.equipe {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.equipe h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.equipe .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.equipe .membro {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.equipe .membro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 80%;
+    margin-bottom: 15px;
+}
+
+.equipe .membro h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.equipe .membro p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Contato */
+.contato {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    font-size: 1.2em;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .missoes .container {
+        flex-direction: column;
+    }
+
+    .equipe .container {
+        flex-direction: column;
+    }
+
+    .equipe .membro {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+}
+
